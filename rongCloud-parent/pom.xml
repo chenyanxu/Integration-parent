@@ -10,27 +10,26 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>rongCloud-parent</artifactId>
-    <groupId>com.kalix.middleware.rongCloud</groupId>
-    <name>Kalix Middleware Rongcloud Parent</name>
+    <groupId>com.kalix.integration.rongCloud</groupId>
+    <name>Kalix integration Rongcloud Parent</name>
     <packaging>pom</packaging>
     <modules>
-        <module>middleware-rongcloud-api</module>
-        <module>middleware-rongcloud-entities</module>
-        <module>middleware-rongcloud-dao</module>
-        <module>middleware-rongcloud-biz</module>
-        <module>middleware-rongcloud-rest</module>
+        <module>integration-rongcloud-api</module>
+        <module>integration-rongcloud-entities</module>
+        <module>integration-rongcloud-dao</module>
+        <module>integration-rongcloud-biz</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.kalix.middleware.rongCloud</groupId>
-                <artifactId>middleware-rongcloud-api</artifactId>
+                <groupId>com.kalix.integration.rongCloud</groupId>
+                <artifactId>integration-rongcloud-api</artifactId>
                 <version>${project.middleware.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.kalix.middleware.rongCloud</groupId>
-                <artifactId>middleware-rongcloud-entities</artifactId>
+                <groupId>com.kalix.integration.rongCloud</groupId>
+                <artifactId>integration-rongcloud-entities</artifactId>
                 <version>${project.middleware.version}</version>
             </dependency>
             <dependency>

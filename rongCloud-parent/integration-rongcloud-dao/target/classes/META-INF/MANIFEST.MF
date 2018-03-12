@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1520820578793
+Build-Jdk: 1.8.0_66
+Built-By: Administrator_
+Bundle-Activator: com.kalix.integration.rongcloud.dao.internal.InitActiv
+ ator
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Category: Kalix integration Rongcloud
+Bundle-ManifestVersion: 2
+Bundle-Name: Kalix integration Rongcloud DAO
+Bundle-SymbolicName: com.kalix.integration.rongcloud.dao
+Bundle-Version: 1.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.kalix.integration.rongcloud.dao;version="1.0.1.SNAPS
+ HOT";uses:="com.kalix.framework.core.api.persistence,com.kalix.framewor
+ k.core.impl.dao,com.kalix.integration.rongcloud.api.dao,com.kalix.integ
+ ration.rongcloud.entities,javax.persistence",com.kalix.integration.rong
+ cloud.dao.internal;version="1.0.1.SNAPSHOT";uses:="com.kalix.framework.
+ core.api.osgi"
+Export-Service: com.kalix.integration.rongcloud.api.dao.ITokenUserBeanDa
+ o
+Import-Package: javax.persistence;version="[1.1,2)",com.kalix.framework.
+ core.api.osgi;version="[1.0,2)",com.kalix.framework.core.api.persistenc
+ e;version="[1.0,2)",com.kalix.framework.core.impl.dao;version="[1.0,2)"
+ ,com.kalix.integration.rongcloud.api.dao;version="[1.0,2)",com.kalix.in
+ tegration.rongcloud.entities;version="[1.0,2)",org.osgi.service.bluepri
+ nt;version="[1.0.0,2.0.0)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.0.0.201509101326

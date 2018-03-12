@@ -1,0 +1,3 @@
+com\kalix\integration\rongcloud\api\internal\InitActivator.class
+com\kalix\integration\rongcloud\api\biz\ITokenUserBeanService.class
+com\kalix\integration\rongcloud\api\dao\ITokenUserBeanDao.class
