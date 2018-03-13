@@ -26,5 +26,20 @@
             <groupId>com.kalix.admin.core</groupId>
             <artifactId>admin-core-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.apache.karaf.shell</groupId>
+            <artifactId>org.apache.karaf.shell.core</artifactId>
+            <version>${karaf.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kalix.framework.core</groupId>
+            <artifactId>framework-core-util</artifactId>
+            <version>${project.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kalix.framework.core</groupId>
+            <artifactId>framework-core-api</artifactId>
+            <version>${project.framework.version}</version>
+        </dependency>
     </dependencies>
 </project>

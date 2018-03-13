@@ -1,6 +1,6 @@
 #-----------------------------------------------------------------
 # Use this file to add customized Bnd instructions for the bundle
 #-----------------------------------------------------------------
-
+Karaf-Commands: *
 Bundle-Activator: ${bundle.namespace}.internal.InitActivator
 Bundle-Category: Kalix integration Rongcloud
