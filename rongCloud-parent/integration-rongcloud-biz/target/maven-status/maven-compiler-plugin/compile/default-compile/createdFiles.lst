@@ -14,6 +14,7 @@ com\kalix\integration\rongcloud\rong\io\rong\models\GagChatRoomUser.class
 com\kalix\integration\rongcloud\rong\io\rong\models\ChatroomQueryResult.class
 com\kalix\integration\rongcloud\rong\io\rong\models\SMSSendCodeResult.class
 com\kalix\integration\rongcloud\rong\io\rong\messages\LBSMessage.class
+com\kalix\integration\rongcloud\biz\InitRongCloudCommand.class
 com\kalix\integration\rongcloud\rong\io\rong\models\TagObj.class
 com\kalix\integration\rongcloud\rong\io\rong\models\HistoryMessageResult.class
 com\kalix\integration\rongcloud\rong\io\rong\models\ListBlockChatroomUserResult.class
@@ -28,6 +29,7 @@ com\kalix\integration\rongcloud\rong\io\rong\models\CodeSuccessResult.class
 com\kalix\integration\rongcloud\rong\io\rong\models\CheckOnlineResult.class
 com\kalix\integration\rongcloud\rong\io\rong\models\ListWordfilterResult.class
 com\kalix\integration\rongcloud\rong\io\rong\util\HttpUtil$2.class
+com\kalix\integration\rongcloud\biz\MyCompleter.class
 com\kalix\integration\rongcloud\rong\io\rong\messages\InfoNtfMessage.class
 com\kalix\integration\rongcloud\rong\io\rong\methods\SMS.class
 com\kalix\integration\rongcloud\rong\io\rong\messages\CmdMsgMessage.class
@@ -57,4 +59,5 @@ com\kalix\integration\rongcloud\rong\io\rong\methods\Chatroom.class
 com\kalix\integration\rongcloud\rong\io\rong\messages\ProfileNtfMessage.class
 com\kalix\integration\rongcloud\rong\io\rong\methods\Push.class
 com\kalix\integration\rongcloud\rong\io\rong\RongCloud.class
+com\kalix\integration\rongcloud\biz\Util.class
 com\kalix\integration\rongcloud\rong\io\rong\messages\TxtMessage.class

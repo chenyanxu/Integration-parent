@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1520820582504
+Bnd-LastModified: 1520904292237
 Build-Jdk: 1.8.0_66
 Built-By: Administrator_
 Bundle-Activator: com.kalix.integration.rongcloud.biz.internal.InitActiv
@@ -15,19 +15,26 @@ Export-Package: com.kalix.integration.rongcloud.biz;version="1.0.1.SNAPS
  HOT";uses:="com.kalix.admin.core.api.biz,com.kalix.admin.core.entities,
  com.kalix.framework.core.api.persistence,com.kalix.framework.core.impl.
  biz,com.kalix.integration.rongcloud.api.dao,com.kalix.integration.rongc
- loud.entities",com.kalix.integration.rongcloud.biz.internal;version="1.
- 0.1.SNAPSHOT";uses:="com.kalix.framework.core.api.osgi"
+ loud.entities,javax.sql,org.apache.karaf.shell.api.action,org.apache.ka
+ raf.shell.api.action.lifecycle,org.apache.karaf.shell.api.console",com.
+ kalix.integration.rongcloud.biz.internal;version="1.0.1.SNAPSHOT";uses:
+ ="com.kalix.framework.core.api.osgi"
 Export-Service: com.kalix.admin.core.api.biz.IAddFieldService
 Import-Package: com.google.gson;version="[2.4,3)",com.kalix.admin.core.a
  pi.biz;version="[1.0,2)",com.kalix.admin.core.entities;version="[1.0,2)
  ",com.kalix.framework.core.api.dao;version="[1.0,2)",com.kalix.framewor
  k.core.api.osgi;version="[1.0,2)",com.kalix.framework.core.api.persiste
  nce;version="[1.0,2)",com.kalix.framework.core.impl.biz;version="[1.0,2
- )",com.kalix.integration.rongcloud.api.dao;version="[1.0,2)",com.kalix.
- integration.rongcloud.entities;version="[1.0,2)",javax.net.ssl,org.apac
- he.commons.codec.binary;version="[1.10,2)",org.osgi.service.blueprint;v
- ersion="[1.0.0,2.0.0)"
+ )",com.kalix.framework.core.util;version="[1.0,2)",com.kalix.integratio
+ n.rongcloud.api.dao;version="[1.0,2)",com.kalix.integration.rongcloud.e
+ ntities;version="[1.0,2)",javax.net.ssl,javax.sql,org.apache.commons.co
+ dec.binary;version="[1.10,2)",org.apache.karaf.shell.api.action;version
+ ="[4.1,5)",org.apache.karaf.shell.api.action.lifecycle;version="[4.1,5)
+ ",org.apache.karaf.shell.api.console;version="[4.1,5)",org.apache.karaf
+ .shell.support.completers;version="[4.1,5)",org.fusesource.jansi;versio
+ n="[1.16,2)",org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
 Import-Service: com.kalix.integration.rongcloud.api.dao.ITokenUserBeanDa
  o;multiple:=false
+Karaf-Commands: *
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Tool: Bnd-3.0.0.201509101326
