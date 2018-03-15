@@ -3,6 +3,7 @@ package com.kalix.integration.rongcloud.biz;
 
 import com.kalix.admin.core.api.biz.IAddFieldService;
 import com.kalix.admin.core.entities.UserBean;
+import com.kalix.framework.core.util.ConfigUtil;
 import com.kalix.integration.rongcloud.api.dao.ITokenUserBeanDao;
 import com.kalix.integration.rongcloud.rong.io.rong.models.TokenResult;
 import com.kalix.integration.rongcloud.entities.TokenUserBean;
@@ -22,12 +23,14 @@ import com.kalix.framework.core.impl.biz.ShiroGenericBizServiceImpl;
 
 public class TokenUserBeanServiceImpl extends ShiroGenericBizServiceImpl<ITokenUserBeanDao, TokenUserBean>  implements IAddFieldService{
 
-    String appKey = "kj7swf8okidb2";//替换成您的appkey
-    String appSecret = "xCcyoNpqIh";//替换成匹配上面key的secret
-
+//    String appKey = "kj7swf8okidb2";//替换成您的appkey
+//    String appSecret = "xCcyoNpqIh";//替换成匹配上面key的secret
+    private static String CONFIG_FILE_NAME = "ConfigWebContext";
     public JsonStatus setField(UserBean entity)
     {
 
+        String appKey = (String) ConfigUtil.getConfigProp("appKey", CONFIG_FILE_NAME);
+        String appSecret = (String) ConfigUtil.getConfigProp("appSecret", CONFIG_FILE_NAME);
         JsonStatus jsonStatus = new JsonStatus();
         RongCloud rongCloud = RongCloud.getInstance(appKey, appSecret);
 

@@ -79,10 +79,9 @@ public class InitRongCloudCommand implements Action {
             statement.executeBatch();
             conn.commit();
 
-        } catch (SQLException e) {
+        }  catch (Exception e) {
             e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
+            Util.outPrint("脚本执行失败！");
         }finally {
 
             if(rs!=null)
@@ -116,9 +115,9 @@ public class InitRongCloudCommand implements Action {
     }
 
 
-    public static void main(String[] args) throws Exception {
-        InitRongCloudCommand n =new InitRongCloudCommand();
-        n.execute();
-    }
+//    public static void main(String[] args) throws Exception {
+//        InitRongCloudCommand n =new InitRongCloudCommand();
+//        n.execute();
+//    }
 }
 
