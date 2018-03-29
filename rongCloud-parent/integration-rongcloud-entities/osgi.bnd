@@ -4,4 +4,4 @@
 
 Bundle-Activator: ${bundle.namespace}.internal.InitActivator
 Meta-Persistence: META-INF/persistence-jpa.xml
-Bundle-Category: Kalix Middleware Rongcloud
+Bundle-Category: Kalix integration Rongcloud
